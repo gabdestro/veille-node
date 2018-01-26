@@ -1,1 +1,2 @@
-git remote add origin https://github...
+git remote add origin https://github.com/gabdestro/veille-node.git
+git push -u origin master
