@@ -1,7 +1,9 @@
 @couleur-menu : #000000;
 @couleur-txt_blanc: #fefefe;
-
-
+@couleur-txt_body: #666666;
+@couleur-contrasteFond: #E6E6F1;
+@couleur-caseFond: #333333;
+@couleur-mauve: #999999;
 .menu{
 	background-color :@couleur-menu;
 	height : 3em;
@@ -18,9 +20,8 @@ li{
 	display:flex;
     justify-content: space-around;
     flex-direction: row;
-            
+            margin: 0 auto;
     padding-top:0.4em;
-
 }  
 
 a{
@@ -32,3 +33,45 @@ a{
     color : @couleur-txt_blanc;
     flex:1;
 }
+
+.liste-case{
+		display:flex;
+		justify-content: center;
+     	background-color : @couleur-caseFond;
+     	height : 8em;
+		flex-direction: column;
+     	margin-bottom: 1.5em;
+		padding-bottom: 2em;
+		width: 115%;
+		padding-left: 0.5em;
+			
+		label{
+				display:flex;
+				color:@couleur-txt_blanc;
+				justify-content: center;
+			}
+
+     	h2{
+     		display:flex;
+     		padding-top:0.6em;
+     		justify-content: center;
+     		color: @couleur-txt_blanc;
+     	}
+     	 
+     	li{
+     		display:flex;
+     		margin: 0 auto;
+     	 	
+     	  	background-color : @couleur-contrasteFond;
+     	 	
+     	 	justify-content: space-around;
+     	
+			.case{
+       			background-color : @couleur-mauve;
+       			    margin: 0.2em 0.1em;
+				    padding: 0.5em 0px 0.5em 0px;
+				max-width: 145px;
+       			min-width: 145px;
+     		}
+        }  
+     }
