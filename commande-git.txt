@@ -6,3 +6,5 @@ git add . // indexer l'ensemble des fichier modifier
 
 git status
 git status -s // simplifié
+
+git commit -m "commentaire" 
