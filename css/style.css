@@ -27,6 +27,13 @@ a {
 body {
   background-color: #6a0888;
 }
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+footer label {
+  color: #fefefe;
+}
 .liste-case {
   display: flex;
   justify-content: center;
