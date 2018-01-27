@@ -24,6 +24,9 @@ a {
   color: #fefefe;
   flex: 1;
 }
+body {
+  background-color: #6a0888;
+}
 .liste-case {
   display: flex;
   justify-content: center;
@@ -47,13 +50,12 @@ a {
   color: #fefefe;
 }
 .liste-case li {
-  display: flex;
-  margin: 0 auto;
+  cmargin: 0 auto;
   background-color: #e6e6f1;
   justify-content: space-around;
 }
 .liste-case li .case {
-  background-color: #999999;
+  background-color: #6a0888;
   margin: 0.2em 0.2em;
   padding: 0.5em 0px 0.5em 0px;
   max-width: 145px;
