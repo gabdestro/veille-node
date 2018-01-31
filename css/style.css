@@ -30,7 +30,7 @@ a {
   flex: 1;
 }
 body {
-  background-color: #6a0888;
+  background-color: #6666ff;
 }
 footer {
   display: flex;
@@ -68,7 +68,7 @@ footer label {
   justify-content: space-around;
 }
 .liste-case li .case {
-  background-color: #6a0888;
+  background-color: #6666ff;
   margin: 0.2em 0.2em;
   padding: 0.5em 0px 0.5em 0px;
   max-width: 145px;
