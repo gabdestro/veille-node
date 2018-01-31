@@ -32,16 +32,6 @@ a {
 body {
   background-color: #6666ff;
 }
-footer {
-  display: flex;
-  justify-content: space-around;
-  min-height: 3em;
-  background-color: #666666;
-}
-footer label {
-  color: #fefefe;
-  padding-top: 0.8em;
-}
 .liste-case {
   display: flex;
   justify-content: center;
@@ -73,4 +63,15 @@ footer label {
   padding: 0.5em 0px 0.5em 0px;
   max-width: 145px;
   min-width: 145px;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to bottom, #363c4f 0%, #40404c 100%);
+  border-top: 2px solid #c8c8c8;
+  min-height: 3em;
+}
+footer label {
+  color: #fefefe;
+  padding: 0.8em 0.0em;
 }
