@@ -24,6 +24,7 @@ li {
   flex-direction: row;
   margin: 0 auto;
   padding-top: 0.1em;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 a {
   display: flex;
@@ -51,15 +52,17 @@ body {
   display: flex;
   color: #fefefe;
   justify-content: center;
+  font-family: 'Roboto', sans-serif;
 }
 .liste-case h2 {
   display: flex;
   padding-top: 0.6em;
   justify-content: center;
   color: #fefefe;
+  font-family: 'Roboto', sans-serif;
 }
 .liste-case li {
-  cmargin: 0 auto;
+  margin: 0 auto;
   background-color: #e6e6f1;
   justify-content: space-around;
 }
