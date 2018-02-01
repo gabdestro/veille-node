@@ -16,35 +16,50 @@
 header{
     background-color :@couleur-menu;
     height : 3em;
-}
+        
+        nav{
+            position: relative;
+            margin: 0 auto;
+            display:flex;
+           
+            justify-content: space-around;
 
-nav{
-		position: relative;
-		margin: 0 auto;
+            width: 100%;
 
-		width: 100%;
+           ul li a:hover{
+                background-color: white;
+                color: black;
+            }
+        } 
+} 
 
-        li{
-             padding-top:0.4em;
-        }  
 
-}
+
+
+ li{
+     display: flex;
+     padding-top:0.4em;
+}  
+
+
 
 
 
 
 main{
     min-height: 25em;
-}
 
-li{
-	display:flex;
+    li{
+    display:flex;
     flex-direction: row;
     margin: 0 auto;
     padding-top:0.1em;
     font-family: 'Roboto Condensed', sans-serif;
 
-}  
+} 
+}
+
+ 
 
 a{
     display: flex;
@@ -55,13 +70,11 @@ a{
     color : @couleur-txt_blanc;
     flex:1;
 }
-header nav ul li a:hover{
-   background-color: white;
-   color: black;
-}
+
+
+
 body{
     background-color :@couleur-bleu; 
-
 }
 
 
