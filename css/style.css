@@ -19,7 +19,7 @@ header nav ul li a:hover {
   background-color: white;
   color: black;
 }
-li {
+header nav li {
   display: flex;
   padding-top: 0.4em;
 }
