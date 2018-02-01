@@ -1,4 +1,4 @@
-git remote add origin https://github.com/gabdestro/veille-node.git
+﻿git remote add origin https://github.com/gabdestro/veille-node.git
 git push -u origin master
 
 git add <nom du fichier> //indexer un seul fichier
@@ -8,3 +8,11 @@ git status
 git status -s // simplifié
 
 git commit -m "commentaire" 
+
+git branch 
+git checkout "nom branche"
+
+git branch -av
+git push -u origin branche2
+
+git clone https://github.com/gabdestro/veille-node_2

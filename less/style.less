@@ -13,22 +13,26 @@
 */
 
 
-.menu{
-	background-color :@couleur-menu;
-	height : 3em;
+header{
+    background-color :@couleur-menu;
+    height : 3em;
 }
 
 nav{
 		position: relative;
 		margin: 0 auto;
-		max-width: 1152px;
-		position: relative;
+
+		width: 100%;
 
         li{
              padding-top:0.4em;
         }  
 
 }
+
+
+
+
 main{
     min-height: 25em;
 }
@@ -39,19 +43,22 @@ li{
     margin: 0 auto;
     padding-top:0.1em;
     font-family: 'Roboto Condensed', sans-serif;
+
 }  
 
 a{
     display: flex;
     justify-content: space-around;
-    color : #fff;
     text-decoration : none;
     font-size: 150%;
     padding: 3px;
     color : @couleur-txt_blanc;
     flex:1;
 }
-
+header nav ul li a:hover{
+   background-color: white;
+   color: black;
+}
 body{
     background-color :@couleur-bleu; 
 
