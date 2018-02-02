@@ -16,3 +16,10 @@ git branch -av
 git push -u origin branche2
 
 git clone https://github.com/gabdestro/veille-node_2
+
+git dir(fichier)
+
+node
+.exit
+node -v
+npm -v

@@ -1,0 +1,19 @@
+'use strict';
+let elm;
+
+let unTableau = ['Québec', 'Ontario','Manitoba','Saskashewan']; 
+console.log("//////////1")
+unTableau.forEach((elm,i) => {console.log(i + ' ' + elm)})
+
+unTableau.push('Alberta')
+unTableau.push('Vancouver')
+unTableau.push('Nouveau-Brunswick')
+console.log("//////////2")
+
+unTableau.forEach((elm,i)=>{console.log(i + ' ' + elm)})
+
+let i=0;
+console.log("//////////3")
+for(elm of unTableau){
+	console.log(elm + ' ' + i++)
+}
