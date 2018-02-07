@@ -2,23 +2,30 @@ const express = require('express');
 const app = express();
 
 app.use(express.static('public'));
-app.get('/html/04_form.html', (req, res) => {
+
+app.get('/formulaire', (req, res) => {
 	console.log(__dirname);
-	res.sendFile( __dirname + "/" + "04_form.html" );
+	res.sendFile( __dirname + "/public/html/" + "04_form.html" );
 })
+
+/*app.get('/membre', (rep, res) => {
+	console.log(__dirname);
+	res.sendFile( __dirname + "/public/html/" + "04_form.html")
+})*/
 
 app.get('/', (req, res) => {
  console.log('accueil')
  res.end('<h1>Accueil</h1>')
 })
 
-app.get('/traiter_get', (req, res) => {
+app.get('/membre', (req, res) => {
  // Preparer l'output en format JSON
 	console.log('la route /traiter_get')
 // on utilise l'objet req.query pour récupérer les données GET
 	reponse = {
 		prenom:req.query.prenom,
-		nom:req.query.nom
+		nom:req.query.nom,
+		courriel:req.query.courriel
 	};
 
 	console.log(reponse);
