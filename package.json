@@ -1,0 +1,29 @@
+{
+  "name": "veille-node-4",
+  "version": "1.0.0",
+  "description": "ex-4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabdestro/veille-node.git"
+  },
+  "keywords": [
+    "Express",
+    "for_of",
+    "for_in",
+    "route",
+    "formulaire"
+  ],
+  "author": "gabriel armstrong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabdestro/veille-node/issues"
+  },
+  "homepage": "https://github.com/gabdestro/veille-node#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
