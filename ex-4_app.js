@@ -8,14 +8,9 @@ app.get('/formulaire', (req, res) => {
 	res.sendFile( __dirname + "/public/html/" + "04_form.html" );
 })
 
-/*app.get('/membre', (rep, res) => {
-	console.log(__dirname);
-	res.sendFile( __dirname + "/public/html/" + "04_form.html")
-})*/
-
 app.get('/', (req, res) => {
- console.log('accueil')
- res.end('<h1>Accueil</h1>')
+ 	console.log('accueil')
+ 	res.end('<h1>Accueil</h1> <a href="http://127.0.0.1:8081/formulaire">formulaire</a> <a href="http://localhost:8081/membre">membre</a>')
 })
 
 app.get('/membre', (req, res) => {
