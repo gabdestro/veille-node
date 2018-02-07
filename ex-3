@@ -1,6 +1,6 @@
 "use strict";
 
-//*
+/*
 		let oProvince = {   
 		 "QC" : "Québec",
 		 "ON" : "Ontario",
@@ -28,15 +28,18 @@ http.createServer((request, response) => { //console.log('branchement sur le por
 
 
 	/* La fonction fs.readFile() est asynchrone elle ne bloque pas l'éxécution des instructions suivantes */
-	fs.readFile('03', (err, data) => {
-	 if (err) return console.error(err);
-	// console.log(data.toString());
+	fs.readFile('03.json', "utf8", (err, data) => {
+	 if (err) throw err;
+	//console.log(data.toString());
+	obj = JSON.parse(data);
+	console.log(obj);
 	});
-response.writeHead(200, {"Content-Type" : "text/html; charset=UTF-8"})
+
+response.writeHead(200, {"Content-Type" : "text/html; charset=UTF-8"});
 	//response.write("Hello World"); //console.log("web on")
 	//response.write(contenu_objet_json(oProvince)); console.log("knuckle on da wae")
 	//response.write(200,{"Content-Type" : "text/html; charset=UTF-8"};
-	response.write('<!DOCTYPE "html"><html><body><table><tr>'+ contenu_objet_json(oProvince)+'</tr></table></body></html>')
+	response.write('<!DOCTYPE "html"><html><body><table><tr>'+ "contenu_objet_json(oProvince)"+'</tr></table></body></html>');
 	//response.write('<h1> ça marche et vive le Québec</h1>')
 	response.end(); 
 }).listen(3000);
