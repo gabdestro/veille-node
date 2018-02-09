@@ -5,7 +5,7 @@ app.get('/html/04_form.html', (req, res) => {
  console.log(__dirname);
  res.sendFile( __dirname + "/" + "04_form.html" );
 })
-
+ 
 app.get('/', (req, res) => {
  console.log('accueil')
  res.end('<h1>Accueil</h1>')
